@@ -104,7 +104,7 @@ The few picture has noise in the data. For example, this picture's angle is -0.9
 
 Stamp: center_2016_12_01_13_38_26_805.jpg
 
-  ######   Angle: -0.923 
+######   Angle: -0.923 
 ![alt text][image4]
 
 ##### Problem 3: Spiky data
