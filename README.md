@@ -48,7 +48,7 @@ The model contains dropout layers in order to reduce overfitting (model.py lines
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 138-164). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model based on transfer learning used a SGD optimizer, so the model would converge smoothly. (model.py line ).
 
