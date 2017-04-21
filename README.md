@@ -1,4 +1,4 @@
-#**Transfer Learning for Behavioral Cloning** 
+# **Transfer Learning for Behavioral Cloning** 
 
 ---
 
@@ -17,7 +17,7 @@
 
 
 
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
 * model.py containing the script to create and train the model
@@ -25,24 +25,24 @@ My project includes the following files:
 * model.h5 containing a trained convolution neural network 
 * writeup_report.md
 
-####2. Submission includes functional code
+#### 2. Submission includes functional code
 Using the Udacity provided simulator with 'Good' graphics quality and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
 ```
-####3. Submission code is usable
+#### 3. Submission code is usable
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+#### 1. An appropriate model architecture has been employed
 
 My model consists of pretrained vgg16 net and original fully connected layers. (model.py lines 263-284) 
 
 The model includes ELU layers to introduce nonlinearity (code line 272, 277, 282), and the data is normalized when the model loads the images. (code line 50). 
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 The model contains dropout layers in order to reduce overfitting (model.py lines 274, 278, 283). 
 
@@ -52,14 +52,14 @@ The model was trained and validated on different data sets to ensure that the mo
 
 The model based on transfer learning used a SGD optimizer, so the model would converge smoothly. (model.py line ).
 
-####4. Appropriate training data
+#### 4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road. Before augmenting provided data, I deleted the data with unappropriate behavior. In the process of augmenting data, I used multiple camera images, and change images' brightness randomly.
 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+#### 1. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to use transfer learning. All I had to think for the architecture was fully connected layers.
 
@@ -74,7 +74,7 @@ The final step was to run the simulator to see how well the car was driving arou
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 The final model architecture (model.py lines 263-284) consisted of a convolution neural network with VGG16 model and fully connected layers.
 
@@ -85,7 +85,7 @@ Note that the left picture represents VGG16 model and the right picture describe
 ![alt text][image1]
 ![alt text][image2]
 
-####3. Creation of the Training Set
+#### 3. Creation of the Training Set
 
 I used the provided udacity dataset. 
 
@@ -146,7 +146,7 @@ This is the histogram for 1 batch, 160 samples. Notice that this histogram has t
 
 ![alt text][image6]
 
-####Data Augmentation
+#### Data Augmentation
 
 1: Put gaussian noise on steering noise 
 
@@ -181,4 +181,3 @@ steering = original_steering + shift_angle
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/rg2aTWEvBz4/0.jpg)](https://www.youtube.com/watch?v=rg2aTWEvBz4)
 
 
-# sdcnd_p3
