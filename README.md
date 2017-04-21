@@ -1,7 +1,5 @@
 # **Transfer Learning for Behavioral Cloning** 
 
----
-
 ### I wrote a blog post about this project, please check out [this medium post](https://medium.com/@kosukemurakami/transfer-learning-for-behavioral-cloning-df0d49c0c69b).
 
 ---
